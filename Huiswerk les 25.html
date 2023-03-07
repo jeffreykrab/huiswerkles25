@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Huiswerk les 25</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#verzend").click(function() {
+          var naam = $("#naam").val();
+          var leeftijd = $("#leeftijd").val();
+          var woonplaats = $("#woonplaats").val();
+          var hobby = $("#hobby").val();
+          window.alert(
+          "Hallo " + naam +
+          " van " + leeftijd +
+          " jaar oud! Wat leuk dat jij in " + woonplaats +
+          " woont en jouw " + hobby + " is. Groetjes, Jeffrey");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Huiswerk les 25</h1>
+    <form>
+      Hoe heet je?
+      <input type="text" id="naam"><br><br>
+      Hoe oud bent je?
+      <input type="text" id="leeftijd"><br><br>
+      Waar woon je?
+      <input type="text" id="woonplaats"><br><br>
+      Wat is je hobby?
+      <input type="text" id="hobby"><br><br>
+      <input id="verzend" name="verzendknop" type="button"
+      value="Klik hier">
+    </form>
+  </body>
+</html>
